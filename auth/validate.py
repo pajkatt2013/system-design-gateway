@@ -1,6 +1,6 @@
 import os, requests
 
-def token(request)：
+def token(request):
     if not "Authorizaiton" in requests.headers:
         return None, ("missing credentials", 401)
     
